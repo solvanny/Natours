@@ -4,6 +4,14 @@ import nat1 from "./img/nat-1-large.jpg";
 import nat2 from "./img/nat-2-large.jpg";
 import nat3 from "./img/nat-3-large.jpg";
 
+import nat8 from "./img/nat-8.jpg";
+import nat9 from "./img/nat-9.jpg";
+
+import video_mp4 from "./img/video.mp4";
+import video_webm from "./img/video.webm";
+
+import logoGreen from "./img/logo-green-2x.png";
+
 import "./App.scss";
 
 class App extends Component {
@@ -232,7 +240,198 @@ class App extends Component {
               </a>
             </div>
           </section>
+
+          <section className="section-stories">
+            <div className="bg-video">
+              <video className="bg-video__content" autoPlay muted loop>
+                <source src={video_mp4} type="video/mp4" />
+                <source src={video_webm} type="video/mp4" />
+                Your browser is not suported!
+              </video>
+            </div>
+
+            <div className="u-center-text u-margin-bottom-big">
+              <h2 className="heading-secondary">
+                We make people genuinely happy
+              </h2>
+            </div>
+            <div className="row">
+              <div className="story">
+                <figure className="story__shape">
+                  <img
+                    src={nat8}
+                    alt="Person on a tour"
+                    className="story__img"
+                  />
+                  <figcaption className="story__caption">Mary Smith</figcaption>
+                </figure>
+                <div className="story__text">
+                  <h3 className="heading-tertiary u-margin-bottom-small">
+                    I had the best week ever with my family
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Esse, dolorem nam natus quisquam soluta id corporis quasi
+                    enim laboriosam blanditiis ipsam vero suscipit consequatur?
+                    Obcaecati pariatur ipsam mollitia unde saepe. Obcaecati
+                    pariatur ipsam mollitia unde saepe.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="story">
+                <figure className="story__shape">
+                  <img
+                    src={nat9}
+                    alt="Person on a tour"
+                    className="story__img"
+                  />
+                  <figcaption className="story__caption">
+                    Jack Wilson
+                  </figcaption>
+                </figure>
+                <div className="story__text">
+                  <h3 className="heading-tertiary u-margin-bottom-small">
+                    WOW! My life is completely different now
+                  </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Esse, dolorem nam natus quisquam soluta id corporis quasi
+                    enim laboriosam blanditiis ipsam vero suscipit consequatur?
+                    Obcaecati pariatur ipsam mollitia unde saepe. Obcaecati
+                    pariatur ipsam mollitia unde saepe.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="u-center-text u-margin-top-huge">
+              <a href="#" className="btn-text">
+                Read all stories &rarr;
+              </a>
+            </div>
+          </section>
+
+          <section className="section-book">
+            <div className="row">
+              <div className="book">
+                <div className="book__form">
+                  <form action="#" className="form">
+                    <div className="u-center-text u-margin-bottom-medium">
+                      <h2 className="heading-secondary">Start booking now</h2>
+                    </div>
+                    <div className="form__group" />
+                    <input
+                      type="text"
+                      id="name"
+                      className="form__input"
+                      placeholder="Full Name"
+                      required
+                    />
+                    <label htmlFor="name" className="form__label">
+                      Full name
+                    </label>
+                    <div className="form__group">
+                      <input
+                        type="email"
+                        id="email"
+                        className="form__input"
+                        placeholder="Email address"
+                        required
+                      />
+                      <label htmlFor="email" className="form__label">
+                        Email address
+                      </label>
+                    </div>
+
+                    <div className="form__group u-margin-bottom-medium">
+                      <div className="form__radio-group">
+                        <input
+                          type="radio"
+                          className="form__radio-input"
+                          id="small"
+                          name="size"
+                        />
+                        <label htmlFor="small" className="form__radio-label">
+                          <span className="form__radio-button" />
+                          Small tour group
+                        </label>
+                      </div>
+                      <div className="form__radio-group">
+                        <input
+                          type="radio"
+                          className="form__radio-input"
+                          id="large"
+                          name="size"
+                        />
+                        <label htmlFor="large" className="form__radio-label">
+                          <span className="form__radio-button" />
+                          Large tour group
+                        </label>
+                      </div>
+                      <div className="form__group">
+                        <button className="btn btn--green">
+                          Next step &rarr;
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
         </main>
+
+        <footer className="footer">
+          <div className="footer__logo-box">
+            <img src={logoGreen} alt="Full logo" className="footer__logo" />
+          </div>
+          <div className="row">
+            <div className="col-1-of-2">
+              <div className="footer__navigation">
+                <ul className="footer__list">
+                  <li className="footer__item">
+                    <a href="#" className="footer__link">
+                      Company
+                    </a>
+                  </li>
+                  <li className="footer__item">
+                    <a href="#" className="footer__link">
+                      Contact us
+                    </a>
+                  </li>
+                  <li className="footer__item">
+                    <a href="#" className="footer__link">
+                      Carrers
+                    </a>
+                  </li>
+                  <li className="footer__item">
+                    <a href="#" className="footer__link">
+                      Privacy policy
+                    </a>
+                  </li>
+                  <li className="footer__item">
+                    <a href="#" className="footer__link">
+                      Terms
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="col-1-of-2">
+              <p className="footer__copyright">
+                Built from&nbsp;
+                <a href="#" className="footer__link">
+                  Ion Soltan &nbsp;
+                </a>
+                Copyright &copy; by Ion Soltan. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Veniam dignissimos distinctio
+                tenetur ad voluptatibus vel earum facere quos accusamus corrupti
+                eum et sed porro rerum possimus, ipsam, harum debitis itaque.
+              </p>
+            </div>
+          </div>
+        </footer>
         {/* <section className="grid-test">
           <div className="row">
             <div className="col-1-of-2">Col 1 of 2</div>
