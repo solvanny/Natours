@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 import Img from "./Img";
 
@@ -37,7 +37,7 @@ class SectionAbout extends Component {
       }
     ];
     return (
-      <section className="section-about" id="section-about">
+      <section className="section-about" id="about">
         <div className="u-center-text u-margin-bottom-big">
           <h2 className="heading-secondary">
             Exciting tours for adventurous people

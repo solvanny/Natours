@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Card = props => {
   const {
@@ -37,9 +37,9 @@ const Card = props => {
               <p className="card__price-value">${value}</p>
             </div>
 
-            <Link to={link} className="btn btn--white">
+            <a href={link} className="btn btn--white">
               {linkName}
-            </Link>
+            </a>
           </div>
         </div>
       </div>

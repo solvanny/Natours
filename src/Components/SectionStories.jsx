@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 import video_mp4 from "../img/video.mp4";
 import video_webm from "../img/video.webm";
@@ -9,7 +9,7 @@ import nat9 from "../img/nat-9.jpg";
 
 const SectionStories = () => {
   return (
-    <section className="section-stories">
+    <section className="section-stories" id="stories">
       <div className="bg-video">
         <video className="bg-video__content" autoPlay muted loop>
           <source src={video_mp4} type="video/mp4" />

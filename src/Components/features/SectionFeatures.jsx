@@ -31,7 +31,7 @@ class SectionFeatures extends Component {
     ];
 
     return (
-      <section className="section-features">
+      <section className="section-features" id="features">
         <div className="row">
           {feuturesData.map(col => (
             <FeauturesColumn

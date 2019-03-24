@@ -10,13 +10,13 @@ import "./App.scss";
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <React.Fragment>
         <Nav />
         <Header />
         <Main />
         <Footer />
         <Popup />
-      </div>
+      </React.Fragment>
     );
   }
 }

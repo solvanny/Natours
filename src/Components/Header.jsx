@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 import logoWhite from "../img/logo-white.png";
 
@@ -15,7 +15,7 @@ const Header = () => {
           <span className="heading-primary--sub">is where life happens</span>
         </h1>
 
-        <Link to="#section-tours" className="btn btn--white btn--animated">
+        <Link to="#tours" className="btn btn--white btn--animated">
           Disover our tours
         </Link>
       </div>

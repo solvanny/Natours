@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import { HashLink as Link } from "react-router-hash-link";
 import nat8 from "../img/nat-8.jpg";
 import nat9 from "../img/nat-9.jpg";
 
@@ -13,9 +12,9 @@ const Popup = () => {
           <img src={nat9} alt="Tour2" className="popup__img" />
         </div>
         <div className="popup__right">
-          <Link to="#section-tours" className="popup__close">
+          <a href="#section-tours" className="popup__close">
             &times;
-          </Link>
+          </a>
           <h2 className="heading-secondary .u-margin-bottom-smaller">
             Start booking now
           </h2>
