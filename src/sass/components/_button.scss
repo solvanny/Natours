@@ -11,13 +11,13 @@
     position: relative;
     font-size: $default-font-size;
 
-    //Change of the <button> element
+    //Change for the <button> element
     border: none;
     cursor: pointer;
   }
 
   &:hover {
-    transform: translateY(-0.3rem);
+    transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
     &::after {
@@ -29,7 +29,7 @@
   &:active,
   &:focus {
     outline: none;
-    transform: translateY(-0.1rem);
+    transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
 
@@ -81,14 +81,16 @@
     padding: 3px;
     transition: all 0.2s;
   }
+
   &:hover {
     background-color: $color-primary;
     color: $color-white;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
     transform: translateY(-2px);
   }
+
   &:active {
-    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
     transform: translateY(0);
   }
 }
