@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/solvanny/natours.github.io/home/precache-manifest.479e4edd9fbf5592666aaecbf45c0c23.js"
+  "/natours/precache-manifest.3a6ba257f61ac1a2788ff9b49c71b957.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/solvanny/natours.github.io/home/index.html", {
+workbox.routing.registerNavigationRoute("/natours/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
