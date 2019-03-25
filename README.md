@@ -1,1 +1,1 @@
-Exemple: https://solvanny.github.io/natours
+Demo: https://solvanny.github.io/natours
